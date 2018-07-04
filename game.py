@@ -12,6 +12,7 @@ b04=1; b08=1; b12=1; b16=1; b20=1; b24=1; b28=1; b32=1; b36=1; b40=1; b44=1; b48
 
 while True:
     read_ser=ser.readline()
+    print(read_ser)
     if("B01" in read_ser and b01==1):
         b01=0
         print("Button 1 was pressed")
