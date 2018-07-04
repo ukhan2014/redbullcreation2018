@@ -315,5 +315,5 @@ while True:
         if(b22 == 0):
         	print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         	fullBright(49, 22)
-    elif(read_ser!="NIL"):
+    elif(NIL not in read_ser):
     	print(read_ser + " pressed, but not processed since it was already pressed")
