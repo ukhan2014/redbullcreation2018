@@ -181,7 +181,7 @@ while True:
         b27=0
         print("Button 27 was pressed")
         if(b6 == 0):
-        	#print("Corresponding button 6 pressed too, FULL BRIGHTNESS to both!")
+        	print("Corresponding button 6 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(27, 6)
     elif("B28" in read_ser and b28==1):
         b28=0
