@@ -21,55 +21,55 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT)
 while True:
     read_ser=ser.readline()
-    if("B01" in read_ser and b1==1):
+    if("B01" in read_ser and b01==1):
         b01=0
         print("Button 1 was pressed")
         if(b22 == 0):
         	print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(1, 22)
-    elif("B02" in read_ser and b2==1):
+    elif("B02" in read_ser and b02==1):
         b02=0
         print("Button 2 was pressed")
         if(b23 == 0):
         	print("Corresponding button 23 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(2, 23)
-    elif("B03" in read_ser and b3==1):
+    elif("B03" in read_ser and b03==1):
         b03=0
         print("Button 3 was pressed")
         if(b24 == 0):
         	print("Corresponding button 24 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(3, 24)
-    elif("B04" in read_ser and b4==1):
+    elif("B04" in read_ser and b04==1):
         b04=0
         print("Button 4 was pressed")
         if(b25 == 0):
         	print("Corresponding button 25 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(4, 25)
-    elif("B05" in read_ser and b5==1):
+    elif("B05" in read_ser and b05==1):
         b05=0
         print("Button 5 was pressed")
         if(b26 == 0):
         	print("Corresponding button 26 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(5, 26)
-    elif("B06" in read_ser and b6==1):
+    elif("B06" in read_ser and b06==1):
         b06=0
         print("Button 6 was pressed")
         if(b27 == 0):
         	print("Corresponding button 27 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(6, 27)
-    elif("B07" in read_ser and b7==1):
+    elif("B07" in read_ser and b07==1):
         b07=0
         print("Button 7 was pressed")
         if(b28 == 0):
         	print("Corresponding button 28 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(7, 28)
-    elif("B08" in read_ser and b8==1):
+    elif("B08" in read_ser and b08==1):
         b08=0
         print("Button 8 was pressed")
         if(b29 == 0):
         	print("Corresponding button 29 pressed too, FULL BRIGHTNESS to both!")
         	#fullBright(8, 29)
-    elif("B09" in read_ser and b9==1):
+    elif("B09" in read_ser and b09==1):
         b09=0
         print("Button 9 was pressed")
         if(b30 == 0):
