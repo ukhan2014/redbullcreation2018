@@ -21,7 +21,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT)
 while True:
     read_ser=ser.readline()
-    if("B001" in read_ser and b1==1):
+    if("B01" in read_ser and b1==1):
         b01=0
         print("Button 1 was pressed")
         if(b22 == 0):
