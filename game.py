@@ -316,7 +316,7 @@ while True:
         if(b22 == 0):
         	print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         	fullBright(49, 22)
-    else
+    else:
         b50=0
         print("Button 50 was pressed")
         if(b22 == 0):
