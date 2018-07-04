@@ -62,9 +62,9 @@ void loop() {
   b36State = digitalRead(35);b37State = digitalRead(36);b38State = digitalRead(37);b39State = digitalRead(38);b40State = digitalRead(39);
   b41State = digitalRead(40);b42State = digitalRead(41);b43State = digitalRead(46);b44State = digitalRead(47);
   
-  if(b1State) { Serial.println("B1"); } else if(b2State) { Serial.println("B2"); } else if(b3State) { Serial.println("B3"); } 
-  else if(b4State) { Serial.println("B4"); } else if(b5State) { Serial.println("B5");  } else if(b6State) { Serial.println("B6");
-  } else if(b7State) { Serial.println("B7"); } else if(b8State) { Serial.println("B8"); } else if(b9State) { Serial.println("B9");
+  if(b1State) { Serial.println("B01"); } else if(b2State) { Serial.println("B02"); } else if(b3State) { Serial.println("B03"); } 
+  else if(b4State) { Serial.println("B04"); } else if(b5State) { Serial.println("B05");  } else if(b6State) { Serial.println("B06");
+  } else if(b7State) { Serial.println("B07"); } else if(b8State) { Serial.println("B08"); } else if(b9State) { Serial.println("B09");
   } else if(b10State) { Serial.println("B10"); } else if(b11State) { Serial.println("B11"); } else if(b12State) { Serial.println("B12");
   } else if(b13State) { Serial.println("B13"); } else if(b14State) { Serial.println("B14"); } else if(b15State) { Serial.println("B15");
   } else if(b16State) { Serial.println("B16"); } else if(b17State) { Serial.println("B17"); } else if(b18State) { Serial.println("B18");
