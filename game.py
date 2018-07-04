@@ -21,6 +21,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT)
 while True:
     read_ser=ser.readline()
+    print(read_ser)
     if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
@@ -314,4 +315,4 @@ while True:
         print("Button 49 was pressed")
         if(b22 == 0):
         	print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
-        	fullBright(49, 22)
+        	fullBright(49, 22) 
