@@ -22,295 +22,295 @@ GPIO.setup(11, GPIO.OUT)
 while True:
     read_ser=ser.readline()
     print(read_ser)
-    if(read_ser=="B1" && b1==1):
+    if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
         print("Corresponding button 22 pressed too, FULL BRIGHTNESS to both!")
         fullBright(1, 22)
-    else if(read_ser=="B1" && b1==1):
+    else if(read_ser=="B1" and b1==1):
         b1=0
         print("Button 1 was pressed")
         if(b22 == 0)
