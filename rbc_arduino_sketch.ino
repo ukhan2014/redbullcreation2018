@@ -38,7 +38,7 @@ pinMode(0, INPUT);pinMode(1, INPUT);pinMode(2, INPUT);pinMode(3, INPUT);pinMode(
 pinMode(5, INPUT);pinMode(6, INPUT);pinMode(7, INPUT);pinMode(8, INPUT);pinMode(9, INPUT);
 pinMode(10, INPUT);pinMode(11, INPUT);pinMode(12, INPUT);pinMode(13, INPUT);pinMode(14, INPUT);
 pinMode(15, INPUT);pinMode(16, INPUT);pinMode(17, INPUT);pinMode(18, INPUT);
-pinMode(20, INPUT);pinMode(21, INPUT);pinMode(22, INPUT);pinMode(23, INPUT);pinMode(24, INPUT);
+pinMode(22, INPUT);pinMode(23, INPUT);pinMode(24, INPUT);
 pinMode(25, INPUT);pinMode(26, INPUT);pinMode(27, INPUT);pinMode(28, INPUT);pinMode(29, INPUT);
 pinMode(30, INPUT);pinMode(31, INPUT);pinMode(32, INPUT);pinMode(33, INPUT);pinMode(34, INPUT);
 pinMode(35, INPUT);pinMode(36, INPUT);pinMode(37, INPUT);pinMode(38, INPUT);pinMode(39, INPUT);
@@ -55,8 +55,8 @@ void loop() {
   b1State = digitalRead(44);b2State = digitalRead(45);b3State = digitalRead(2);b4State = digitalRead(3);b5State = digitalRead(4);
   b6State = digitalRead(5);b7State = digitalRead(6);b8State = digitalRead(7);b9State = digitalRead(8);b10State = digitalRead(9);
   b11State = digitalRead(10);b12State = digitalRead(11);b13State = digitalRead(12);b14State = digitalRead(13);b15State = digitalRead(14);
-  b16State = digitalRead(15);b17State = digitalRead(16);b18State = digitalRead(17);b19State = digitalRead(18);b20State = digitalRead(19);
-  b21State = digitalRead(42);b22State = digitalRead(43);b23State = digitalRead(22);b24State = digitalRead(23);b25State = digitalRead(24);
+  b16State = digitalRead(15);b17State = digitalRead(16);b18State = digitalRead(17);b19State = digitalRead(18);b20State = digitalRead(42);
+  b21State = digitalRead(43);b22State = digitalRead(44);b23State = digitalRead(22);b24State = digitalRead(23);b25State = digitalRead(24);
   b26State = digitalRead(25);b27State = digitalRead(26);b28State = digitalRead(27);b29State = digitalRead(28);b30State = digitalRead(29);
   b31State = digitalRead(30);b32State = digitalRead(31);b33State = digitalRead(32);b34State = digitalRead(33);b35State = digitalRead(34);
   b36State = digitalRead(35);b37State = digitalRead(36);b38State = digitalRead(37);b39State = digitalRead(38);b40State = digitalRead(39);
@@ -76,7 +76,7 @@ void loop() {
   } else if(b34State) { Serial.println("B34"); } else if(b35State) { Serial.println("B35"); } else if(b36State) { Serial.println("B36");
   } else if(b37State) { Serial.println("B37"); } else if(b38State) { Serial.println("B38"); } else if(b39State) { Serial.println("B39");
   } else if(b40State) { Serial.println("B40"); } else if(b41State) { Serial.println("B41"); } else if(b42State) { Serial.println("B42");
-  } else if(b43State) { Serial.println("B43"); } else if(b44State) { Serial.println("B44"); } 
+  } else if(p1State) { Serial.println("B43"); } else if(p) { Serial.println("B44"); } 
   else { 
     Serial.println("NIL"); 
 
