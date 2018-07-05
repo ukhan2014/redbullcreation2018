@@ -25,7 +25,7 @@ while True:
     	if(p1reset > 0):
     		p1reset-=1
     	if(p1reset == 0):
-    		print(Player 2 READY")
+    		print("Player 2 READY")
     elif("B01" in read_ser and b01==1):
         b01=0
         print("Button 1 was pressed")
