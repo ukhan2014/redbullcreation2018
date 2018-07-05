@@ -8,12 +8,24 @@ ser.baudrate=9600
 b01=1; b05=1; b09=1;  b13=1; b17=1; b21=1; b25=1; b29=1; b33=1; b37=1; b41=1; b45=1; b49=1; 
 b02=1; b06=1; b10=1; b14=1; b18=1; b22=1; b26=1; b30=1; b34=1; b38=1; b42=1; b46=1; b50=1; 
 b03=1; b07=1; b11=1; b15=1; b19=1; b23=1; b27=1; b31=1; b35=1; b39=1; b43=1; b47=1; b51=1; 
-b04=1; b08=1; b12=1; b16=1; b20=1; b24=1; b28=1; b32=1; b36=1; b40=1; b44=1; b48=1; b52=1; 
+b04=1; b08=1; b12=1; b16=1; b20=1; b24=1; b28=1; b32=1; b36=1; b40=1; b44=1; b48=1; b52=1;
+p1reset = 10; p2reset=3;
 
 while True:
     read_ser=ser.readline()
     print(read_ser)
-    if("B01" in read_ser and b01==1):
+    if("START_P1" in read_ser):
+    	p1reset--
+        if(p1reset < 8):
+            print("Player 1 READY")
+        if(p1reset < 1):
+        	p1reset++
+        	print("RESET THE SYSTEM")
+    elif("START_P2" in read_ser):
+    	p1reset--
+    	if(p1reset == 0):
+    		p1reset++
+    elif("B01" in read_ser and b01==1):
         b01=0
         print("Button 1 was pressed")
         if(b22 == 0):
