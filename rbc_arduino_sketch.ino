@@ -19,7 +19,7 @@ int b21State = 1;int b22State = 1;int b23State = 1;int b24State = 1;int b25State
 int b26State = 1;int b27State = 1;int b28State = 1;int b29State = 1;int b30State = 1;
 int b31State = 1;int b32State = 1;int b33State = 1;int b34State = 1;int b35State = 1;
 int b36State = 1;int b37State = 1;int b38State = 1;int b39State = 1;int b40State = 1;
-int b41State = 1;int b42State = 1;int b43State = 1;int b44State = 1;int b45State = 1; int p1State = 1;int p2State=1;
+int b41State = 1;int b42State = 1;int b43State = 1;int b44State = 1;int b45State = 1;
 
 String data="Hello From Arduino! msg #: ";
 int count;
@@ -76,7 +76,7 @@ void loop() {
   } else if(b34State) { Serial.println("B34"); } else if(b35State) { Serial.println("B35"); } else if(b36State) { Serial.println("B36");
   } else if(b37State) { Serial.println("B37"); } else if(b38State) { Serial.println("B38"); } else if(b39State) { Serial.println("B39");
   } else if(b40State) { Serial.println("B40"); } else if(b41State) { Serial.println("B41"); } else if(b42State) { Serial.println("B42");
-  } else if(p1State) { Serial.println("B43"); } else if(p) { Serial.println("B44"); } 
+  }  
   else { 
     Serial.println("NIL"); 
 
