@@ -15,16 +15,16 @@ while True:
     read_ser=ser.readline()
     print(read_ser)
     if("START_P1" in read_ser):
-    	p1reset--
+    	p1reset-=1
         if(p1reset < 8):
             print("Player 1 READY")
         if(p1reset < 1):
-        	p1reset++
+        	p1reset+=1
         	print("RESET THE SYSTEM")
     elif("START_P2" in read_ser):
-    	p1reset--
+    	p1reset-=1
     	if(p1reset == 0):
-    		p1reset++
+    		p1reset+=1
     elif("B01" in read_ser and b01==1):
         b01=0
         print("Button 1 was pressed")
