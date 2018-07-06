@@ -1,8 +1,8 @@
 import serial
 import time
 
-ser=serial.Serial("/dev/ttyACM0",9600)  #change ACM number as found from ls /dev/tty/ACM*
-ser.baudrate=9600
+ser=serial.Serial("/dev/ttyACM0",115200)  #change ACM number as found from ls /dev/tty/ACM*
+ser.baudrate=115200
 
 b01=1; b05=1; b09=1;  b13=1; b17=1; b21=1; b25=1; b29=1; b33=1; b37=1; b41=1; b45=1; b49=1; 
 b02=1; b06=1; b10=1; b14=1; b18=1; b22=1; b26=1; b30=1; b34=1; b38=1; b42=1; b46=1; b50=1; 
