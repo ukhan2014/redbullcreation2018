@@ -137,7 +137,7 @@ void startAnimation() {
   setLEDs100();delay(200);setLEDs0();delay(200);
   setLEDs100();delay(200);setLEDs0();delay(200);
   setLEDs100();delay(200);setLEDs0();delay(200);
-  setLEDs50();
+  setLEDs0();
 }
 
 void setLEDs50() {
@@ -192,7 +192,7 @@ void setLEDs0() {
 }
 
 void setSpecificLedPairGreen(int first, int second) {
-	led.setPixelColor(first,  0, 255, 0);
-	led.setPixelColor(second,  0, 255, 0);
-	led.show();
+  led.setPixelColor(first,  0, 255, 0);
+  led.setPixelColor(second,  0, 255, 0);
+  led.show();
 }
