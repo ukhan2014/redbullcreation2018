@@ -18,13 +18,16 @@ while True:
     		p1reset-=1
         if(p1reset < 8):
             print("Player 1 READY")
+            ser.write(b'p1ready')
         if(p1reset < 1):
         	print("RESET THE SYSTEM")
+        	ser.write(b'reset')
     elif("START_P2" in read_ser):
     	if(p1reset > 0):
     		p1reset-=1
     	if(p1reset == 0):
     		print("Player 2 READY")
+    		ser.write(b'p2ready')
     elif("B01" in read_ser and b01==1):
         b01=0
         print("Button 1 was pressed")
@@ -277,4 +280,3 @@ while True:
         if(b21 == 0):
        	 	print("Corresponding button 21 pressed too, FULL BRIGHTNESS to both!")
         	ser.write(b'F42,21')
-
