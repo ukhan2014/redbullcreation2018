@@ -9,7 +9,7 @@
 // Parameter 3 = pixel type flags, add together as needed:
 //   NEO_KHZ400  400 KHz (classic 'v1' (not v2) FLORA pixels, WS2811 drivers), 800 for others
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2), GRB for others
-Adafruit_NeoPixel led = Adafruit_NeoPixel(42, LED_PIN, NEO_RGB + NEO_KHZ400);
+Adafruit_NeoPixel led = Adafruit_NeoPixel(21, LED_PIN, NEO_RGB + NEO_KHZ400);
 
 int b1State = 1;int b2State = 1;int b3State = 1;int b4State = 1;int b5State = 1;
 int b6State = 1;int b7State = 1;int b8State = 1;int b9State = 1;int b10State = 1;
