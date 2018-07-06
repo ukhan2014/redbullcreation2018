@@ -9,7 +9,7 @@
 // Parameter 3 = pixel type flags, add together as needed:
 //   NEO_KHZ400  400 KHz (classic 'v1' (not v2) FLORA pixels, WS2811 drivers), 800 for others
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2), GRB for others
-Adafruit_NeoPixel led = Adafruit_NeoPixel(17, LED_PIN, NEO_RGB + NEO_KHZ400);
+Adafruit_NeoPixel led = Adafruit_NeoPixel(21, LED_PIN, NEO_RGB + NEO_KHZ400);
 
 int b1State = 1;int b2State = 1;int b3State = 1;int b4State = 1;int b5State = 1;
 int b6State = 1;int b7State = 1;int b8State = 1;int b9State = 1;int b10State = 1;
@@ -22,19 +22,17 @@ int b36State = 1;int b37State = 1;int b38State = 1;int b39State = 1;int b40State
 int b41State = 1;int b42State = 1;int b43State = 1;int b44State = 1;int b45State = 1;
 
 String data="Hello From Arduino! msg #: ";
-int count;
 String m;
 
 void setup() {
-    attachInterrupt(digitalPinToInterrupt(19), resetISR, RISING);
-    attachInterrupt(digitalPinToInterrupt(20), p1Pressed, RISING);
-    attachInterrupt(digitalPinToInterrupt(21), p2Pressed, RISING);
+    //attachInterrupt(digitalPinToInterrupt(19), resetISR, RISING);
+    attachInterrupt(digitalPinToInterrupt(19), p1Pressed, RISING);
+    attachInterrupt(digitalPinToInterrupt(18), p2Pressed, RISING);
 
 // put your setup code here, to run once:
 Serial.begin(115200);
 led.begin();
 led.show(); // Initialize all pixels to 'off'
-count = 0;
 pinMode(0, INPUT);pinMode(1, INPUT);pinMode(2, INPUT);pinMode(3, INPUT);pinMode(4, INPUT);
 pinMode(5, INPUT);pinMode(6, INPUT);pinMode(7, INPUT);pinMode(8, INPUT);pinMode(9, INPUT);
 pinMode(10, INPUT);pinMode(11, INPUT);pinMode(12, INPUT);pinMode(13, INPUT);pinMode(14, INPUT);
@@ -51,29 +49,28 @@ startAnimation();
 
 void(* resetFunc) (void) = 0; //declare reset function @ address 0
 
-int rx(String msg, String match) { return (msg.indexOf(match) > 0) }
+int rx(String msg, String match) { return (msg.indexOf(match) > 0); }
 
 void loop() {
   m = Serial.readString();
 
   if(rx(m, "p1ready")){ } else if(rx(m, "p2ready")){ } else if(rx(m, "reset")){ resetFunc(); }
-  else if(rx(m, "F1,22")){setSpecificLedPairGreen(1,22)} else if(rx(m, "F2,23")){setSpecificLedPairGreen(2,23)} else if(rx(m, "F3,24")){setSpecificLedPairGreen(3,24)}
-   else if(rx(m, "F4,25")){setSpecificLedPairGreen(4,25)} else if(rx(m, "F5,26")){setSpecificLedPairGreen(5,26)} else if(rx(m, "F6,27")){setSpecificLedPairGreen(6,27)}
-    else if(rx(m, "F7,28")){setSpecificLedPairGreen(7,28)} else if(rx(m, "F8,29")){setSpecificLedPairGreen(8,29)} else if(rx(m, "F9,30")){setSpecificLedPairGreen(9,30)}
-     else if(rx(m, "F10,31")){setSpecificLedPairGreen(10,31)} else if(rx(m, "F11,32")){setSpecificLedPairGreen(11,32)} else if(rx(m, "F12,33")){setSpecificLedPairGreen(12,33)}
-      else if(rx(m, "F13,34")){setSpecificLedPairGreen(13,34)} else if(rx(m, "F14,35")){setSpecificLedPairGreen(14,35)} else if(rx(m, "F15,36")){setSpecificLedPairGreen(15,36)}
-       else if(rx(m, "F16,37")){setSpecificLedPairGreen(16,37)} else if(rx(m, "F17,38")){setSpecificLedPairGreen(17,38)} else if(rx(m, "F18,39")){setSpecificLedPairGreen(18,39)}
-        else if(rx(m, "F19,40")){setSpecificLedPairGreen(19,40)} else if(rx(m, "F20,41")){setSpecificLedPairGreen(20,41)} else if(rx(m, "F21,42")){setSpecificLedPairGreen(21,42)}
-         else if(rx(m, "F22,1")){setSpecificLedPairGreen(22,1)} else if(rx(m, "F23,2")){setSpecificLedPairGreen(23,2)} else if(rx(m, "F24,3")){setSpecificLedPairGreen(24,3)}
-          else if(rx(m, "F25,4")){setSpecificLedPairGreen(25,4)} else if(rx(m, "F26,5")){setSpecificLedPairGreen(26,5)} else if(rx(m, "F27,6")){setSpecificLedPairGreen(27,6)}
-           else if(rx(m, "F28,7")){setSpecificLedPairGreen(28,7)} else if(rx(m, "F29,8")){setSpecificLedPairGreen(29,8)} else if(rx(m, "F30,9")){setSpecificLedPairGreen(30,9)}
-            else if(rx(m, "F31,10")){setSpecificLedPairGreen(31,10)} else if(rx(m, "F32,11")){setSpecificLedPairGreen(32,11)} else if(rx(m, "F33,12")){setSpecificLedPairGreen(33,12)}
-             else if(rx(m, "F34,13")){setSpecificLedPairGreen(34,13)} else if(rx(m, "F35,14")){setSpecificLedPairGreen(35,14)} else if(rx(m, "F36,15")){setSpecificLedPairGreen(36,15)}
-              else if(rx(m, "F37,16")){setSpecificLedPairGreen(37,16)} else if(rx(m, "F38,17")){setSpecificLedPairGreen(38,17)} else if(rx(m, "F39,18")){setSpecificLedPairGreen(39,18)}
-               else if(rx(m, "F40,19")){setSpecificLedPairGreen(40,19)} else if(rx(m, "F41,20")){setSpecificLedPairGreen(41,20)} else if(rx(m, "F42,21")){setSpecificLedPairGreen(42,21)}
+  else if(rx(m, "F1,22")){setSpecificLedPairGreen(1,22);} else if(rx(m, "F2,23")){setSpecificLedPairGreen(2,23);} else if(rx(m, "F3,24")){setSpecificLedPairGreen(3,24);}
+   else if(rx(m, "F4,25")){setSpecificLedPairGreen(4,25);} else if(rx(m, "F5,26")){setSpecificLedPairGreen(5,26);} else if(rx(m, "F6,27")){setSpecificLedPairGreen(6,27);}
+    else if(rx(m, "F7,28")){setSpecificLedPairGreen(7,28);} else if(rx(m, "F8,29")){setSpecificLedPairGreen(8,29);} else if(rx(m, "F9,30")){setSpecificLedPairGreen(9,30);}
+     else if(rx(m, "F10,31")){setSpecificLedPairGreen(10,31);} else if(rx(m, "F11,32")){setSpecificLedPairGreen(11,32);} else if(rx(m, "F12,33")){setSpecificLedPairGreen(12,33);}
+      else if(rx(m, "F13,34")){setSpecificLedPairGreen(13,34);} else if(rx(m, "F14,35")){setSpecificLedPairGreen(14,35);} else if(rx(m, "F15,36")){setSpecificLedPairGreen(15,36);}
+       else if(rx(m, "F16,37")){setSpecificLedPairGreen(16,37);} else if(rx(m, "F17,38")){setSpecificLedPairGreen(17,38);} else if(rx(m, "F18,39")){setSpecificLedPairGreen(18,39);}
+        else if(rx(m, "F19,40")){setSpecificLedPairGreen(19,40);} else if(rx(m, "F20,41")){setSpecificLedPairGreen(20,41);} else if(rx(m, "F21,42")){setSpecificLedPairGreen(21,42);}
+         else if(rx(m, "F22,1")){setSpecificLedPairGreen(22,1);} else if(rx(m, "F23,2")){setSpecificLedPairGreen(23,2);} else if(rx(m, "F24,3")){setSpecificLedPairGreen(24,3);}
+          else if(rx(m, "F25,4")){setSpecificLedPairGreen(25,4);} else if(rx(m, "F26,5")){setSpecificLedPairGreen(26,5);} else if(rx(m, "F27,6")){setSpecificLedPairGreen(27,6);}
+           else if(rx(m, "F28,7")){setSpecificLedPairGreen(28,7);} else if(rx(m, "F29,8")){setSpecificLedPairGreen(29,8);} else if(rx(m, "F30,9")){setSpecificLedPairGreen(30,9);}
+            else if(rx(m, "F31,10")){setSpecificLedPairGreen(31,10);} else if(rx(m, "F32,11")){setSpecificLedPairGreen(32,11);} else if(rx(m, "F33,12")){setSpecificLedPairGreen(33,12);}
+             else if(rx(m, "F34,13")){setSpecificLedPairGreen(34,13);} else if(rx(m, "F35,14")){setSpecificLedPairGreen(35,14);} else if(rx(m, "F36,15")){setSpecificLedPairGreen(36,15);}
+              else if(rx(m, "F37,16")){setSpecificLedPairGreen(37,16);} else if(rx(m, "F38,17")){setSpecificLedPairGreen(38,17);} else if(rx(m, "F39,18")){setSpecificLedPairGreen(39,18);}
+               else if(rx(m, "F40,19")){setSpecificLedPairGreen(40,19);} else if(rx(m, "F41,20")){setSpecificLedPairGreen(41,20);} else if(rx(m, "F42,21")){setSpecificLedPairGreen(42,21);}
 
-  count+22
-  b1State = digitalRead(44);b2State = digitalRead(45);b3State = digitalRead(2);b4State = digitalRead(3);b5State = digitalRead(4);
+  b1State = digitalRead(49);b2State = digitalRead(45);b3State = digitalRead(2);b4State = digitalRead(3);b5State = digitalRead(4);
   b6State = digitalRead(5);b7State = digitalRead(6);b8State = digitalRead(7);b9State = digitalRead(8);b10State = digitalRead(9);
   b11State = digitalRead(10);b12State = digitalRead(11);b13State = digitalRead(12);b14State = digitalRead(13);b15State = digitalRead(14);
   b16State = digitalRead(15);b17State = digitalRead(16);b18State = digitalRead(17);b19State = digitalRead(18);b20State = digitalRead(42);
@@ -102,9 +99,6 @@ void loop() {
     Serial.println("NIL"); 
 
   }
-  
-// put your main code here, to run repeatedly:
-
 }
 
 void resetISR() {
