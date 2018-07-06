@@ -23,6 +23,7 @@ int b41State = 1;int b42State = 1;int b43State = 1;int b44State = 1;int b45State
 
 String data="Hello From Arduino! msg #: ";
 int count;
+String m;
 
 void setup() {
     attachInterrupt(digitalPinToInterrupt(19), resetISR, RISING);
@@ -50,8 +51,28 @@ startAnimation();
 
 void(* resetFunc) (void) = 0; //declare reset function @ address 0
 
+int rx(String msg, String match) { return (msg.indexOf(match) > 0) }
+
 void loop() {
-  count++;
+  m = Serial.readString();
+
+  if(rx(m, "p1ready")){ } else if(rx(m, "p2ready")){ } else if(rx(m, "reset")){ resetFunc(); }
+  else if(rx(m, "F1,22")){setSpecificLedPairGreen(1,22)} else if(rx(m, "F2,23")){setSpecificLedPairGreen(2,23)} else if(rx(m, "F3,24")){setSpecificLedPairGreen(3,24)}
+   else if(rx(m, "F4,25")){setSpecificLedPairGreen(4,25)} else if(rx(m, "F5,26")){setSpecificLedPairGreen(5,26)} else if(rx(m, "F6,27")){setSpecificLedPairGreen(6,27)}
+    else if(rx(m, "F7,28")){setSpecificLedPairGreen(7,28)} else if(rx(m, "F8,29")){setSpecificLedPairGreen(8,29)} else if(rx(m, "F9,30")){setSpecificLedPairGreen(9,30)}
+     else if(rx(m, "F10,31")){setSpecificLedPairGreen(10,31)} else if(rx(m, "F11,32")){setSpecificLedPairGreen(11,32)} else if(rx(m, "F12,33")){setSpecificLedPairGreen(12,33)}
+      else if(rx(m, "F13,34")){setSpecificLedPairGreen(13,34)} else if(rx(m, "F14,35")){setSpecificLedPairGreen(14,35)} else if(rx(m, "F15,36")){setSpecificLedPairGreen(15,36)}
+       else if(rx(m, "F16,37")){setSpecificLedPairGreen(16,37)} else if(rx(m, "F17,38")){setSpecificLedPairGreen(17,38)} else if(rx(m, "F18,39")){setSpecificLedPairGreen(18,39)}
+        else if(rx(m, "F19,40")){setSpecificLedPairGreen(19,40)} else if(rx(m, "F20,41")){setSpecificLedPairGreen(20,41)} else if(rx(m, "F21,42")){setSpecificLedPairGreen(21,42)}
+         else if(rx(m, "F22,1")){setSpecificLedPairGreen(22,1)} else if(rx(m, "F23,2")){setSpecificLedPairGreen(23,2)} else if(rx(m, "F24,3")){setSpecificLedPairGreen(24,3)}
+          else if(rx(m, "F25,4")){setSpecificLedPairGreen(25,4)} else if(rx(m, "F26,5")){setSpecificLedPairGreen(26,5)} else if(rx(m, "F27,6")){setSpecificLedPairGreen(27,6)}
+           else if(rx(m, "F28,7")){setSpecificLedPairGreen(28,7)} else if(rx(m, "F29,8")){setSpecificLedPairGreen(29,8)} else if(rx(m, "F30,9")){setSpecificLedPairGreen(30,9)}
+            else if(rx(m, "F31,10")){setSpecificLedPairGreen(31,10)} else if(rx(m, "F32,11")){setSpecificLedPairGreen(32,11)} else if(rx(m, "F33,12")){setSpecificLedPairGreen(33,12)}
+             else if(rx(m, "F34,13")){setSpecificLedPairGreen(34,13)} else if(rx(m, "F35,14")){setSpecificLedPairGreen(35,14)} else if(rx(m, "F36,15")){setSpecificLedPairGreen(36,15)}
+              else if(rx(m, "F37,16")){setSpecificLedPairGreen(37,16)} else if(rx(m, "F38,17")){setSpecificLedPairGreen(38,17)} else if(rx(m, "F39,18")){setSpecificLedPairGreen(39,18)}
+               else if(rx(m, "F40,19")){setSpecificLedPairGreen(40,19)} else if(rx(m, "F41,20")){setSpecificLedPairGreen(41,20)} else if(rx(m, "F42,21")){setSpecificLedPairGreen(42,21)}
+
+  count+22
   b1State = digitalRead(44);b2State = digitalRead(45);b3State = digitalRead(2);b4State = digitalRead(3);b5State = digitalRead(4);
   b6State = digitalRead(5);b7State = digitalRead(6);b8State = digitalRead(7);b9State = digitalRead(8);b10State = digitalRead(9);
   b11State = digitalRead(10);b12State = digitalRead(11);b13State = digitalRead(12);b14State = digitalRead(13);b15State = digitalRead(14);
@@ -170,3 +191,8 @@ void setLEDs0() {
     led.show();
 }
 
+void setSpecificLedPairGreen(int first, int second) {
+	led.setPixelColor(first,  0, 255, 0);
+	led.setPixelColor(second,  0, 255, 0);
+	led.show();
+}
