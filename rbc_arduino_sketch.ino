@@ -31,7 +31,7 @@ void setup() {
     attachInterrupt(digitalPinToInterrupt(21), p2Pressed, RISING);
 
 // put your setup code here, to run once:
-Serial.begin(9600);
+Serial.begin(115200);
 led.begin();
 led.show(); // Initialize all pixels to 'off'
 count = 0;
