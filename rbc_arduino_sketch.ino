@@ -54,6 +54,9 @@ int rx(String msg, String match) { return (msg.indexOf(match) > 0); }
 void loop() {
   m = Serial.readString();
 
+  Serial.print("strlen");
+  Serial.println(m);
+    
   if(rx(m, "p1ready")){ } else if(rx(m, "p2ready")){ } else if(rx(m, "reset")){ resetFunc(); }
   else if(rx(m, "F1,22")){setSpecificLedPairGreen(1,22);} else if(rx(m, "F2,23")){setSpecificLedPairGreen(2,23);} else if(rx(m, "F3,24")){setSpecificLedPairGreen(3,24);}
    else if(rx(m, "F4,25")){setSpecificLedPairGreen(4,25);} else if(rx(m, "F5,26")){setSpecificLedPairGreen(5,26);} else if(rx(m, "F6,27")){setSpecificLedPairGreen(6,27);}
