@@ -53,12 +53,7 @@ int rx(String msg, String match) { return (msg.indexOf(match) > 0); }
 
 void loop() {
   m = Serial.readString();
-  int mlen = strlen(m);
-
-  Serial.print("message: ");
-  Serial.println(m);
-      Serial.print("strlen: ");
-  Serial.println(mlen);
+  if(!m.equals("")) {
     
   if(rx(m, "p1ready")){ } else if(rx(m, "p2ready")){ } else if(rx(m, "reset")){ resetFunc(); }
   else if(rx(m, "F1,22")){setSpecificLedPairGreen(1,22);} else if(rx(m, "F2,23")){setSpecificLedPairGreen(2,23);} else if(rx(m, "F3,24")){setSpecificLedPairGreen(3,24);}
@@ -75,7 +70,8 @@ void loop() {
              else if(rx(m, "F34,13")){setSpecificLedPairGreen(34,13);} else if(rx(m, "F35,14")){setSpecificLedPairGreen(35,14);} else if(rx(m, "F36,15")){setSpecificLedPairGreen(36,15);}
               else if(rx(m, "F37,16")){setSpecificLedPairGreen(37,16);} else if(rx(m, "F38,17")){setSpecificLedPairGreen(38,17);} else if(rx(m, "F39,18")){setSpecificLedPairGreen(39,18);}
                else if(rx(m, "F40,19")){setSpecificLedPairGreen(40,19);} else if(rx(m, "F41,20")){setSpecificLedPairGreen(41,20);} else if(rx(m, "F42,21")){setSpecificLedPairGreen(42,21);}
-
+  }
+    
   b1State = digitalRead(49);b2State = digitalRead(45);b3State = digitalRead(2);b4State = digitalRead(3);b5State = digitalRead(4);
   b6State = digitalRead(5);b7State = digitalRead(6);b8State = digitalRead(7);b9State = digitalRead(8);b10State = digitalRead(9);
   b11State = digitalRead(10);b12State = digitalRead(11);b13State = digitalRead(12);b14State = digitalRead(13);b15State = digitalRead(14);
