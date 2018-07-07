@@ -54,7 +54,7 @@ int rx(String msg, String match) { return (msg.indexOf(match) > 0); }
 void loop() {
   m = Serial.readString();
 
-  Serial.print("strlen");
+  Serial.print("message: ");
   Serial.println(m);
     
   if(rx(m, "p1ready")){ } else if(rx(m, "p2ready")){ } else if(rx(m, "reset")){ resetFunc(); }
